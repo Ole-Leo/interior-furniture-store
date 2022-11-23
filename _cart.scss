@@ -1,0 +1,237 @@
+.top__cart {
+  height: 400px;
+  background-image: linear-gradient(
+      rgba(34, 34, 34, 0.4),
+      rgba(34, 34, 34, 0.4)
+    ),
+    url(img/cart_main.jpg);
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  background-size: cover;
+}
+
+.cart__box {
+  padding-top: 64px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+}
+
+.cart__head {
+  margin-bottom: 14px;
+  width: 756px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.cart__item__content {
+  display: flex;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.cart__item__info {
+  padding-left: 32px;
+  padding-right: 235px;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  width: 276px;
+}
+
+.cart__item__count {
+  width: 71px;
+  height: 51px;
+  box-sizing: border-box;
+  background: #f7f6f6;
+  border-radius: 6px;
+  padding-top: 9px;
+  display: flex;
+}
+
+.count {
+  width: 47px;
+  height: 27px;
+  padding-top: 2px;
+  background: #f7f6f6;
+  text-align: center;
+  border: none;
+  font-family: Montserrat;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 29px;
+  outline: none;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+  }
+
+  &[type='number'] {
+    appearance: none;
+    -moz-appearance: textfield;
+  }
+}
+
+.arrow {
+  display: flex;
+  flex-direction: column;
+  width: 16px;
+  height: 32px;
+  margin-right: 14px;
+  &__up {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    height: 16px;
+    background-image: url(img/arrow-up.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__down {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    height: 16px;
+    background-image: url(img/arrow-down.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+.cart__item__line {
+  border-top: 0.5px solid #cacdd8;
+}
+
+.cart__item__link {
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 210%;
+  display: flex;
+  text-decoration-line: underline;
+  gap: 30px;
+}
+
+.cart__link {
+  color: $colorB;
+}
+
+.cart__price {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 20px;
+  color: $colorB;
+}
+
+.cart__option {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+
+  &-button {
+    border: 1px solid $colorB;
+    box-sizing: border-box;
+    border-radius: 50px;
+    width: 200px;
+    height: 37px;
+    background-color: transparent;
+    font-family: Montserrat;
+    font-size: 14px;
+    line-height: 17px;
+    transition: all 0.3s;
+    &:hover {
+      color: $colorA;
+      background-color: $colorB;
+      cursor: pointer;
+    }
+  }
+}
+
+.cart-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 379px;
+  height: 556px;
+  box-sizing: border-box;
+  padding-top: 42px;
+  background: #f7f6f6;
+  border-radius: 20px;
+
+  &__title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    color: $colorB;
+    text-align: center;
+    margin-bottom: 35px;
+  }
+
+  &__data {
+    width: 288px;
+    margin-bottom: 64px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 41px;
+    &_text {
+      font-family: Montserrat;
+      font-size: 14px;
+      line-height: 17px;
+      border: none;
+      border-bottom: 1px solid #cacdd8;
+      background-color: transparent;
+      outline: none;
+      &::placeholder {
+        font-family: Montserrat;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 17px;
+        color: #888;
+      }
+
+      &:focus::placeholder {
+        opacity: 0;
+        transition: opacity 0.3s ease;
+      }
+    }
+  }
+
+  &__price {
+    font-size: 24px;
+    line-height: 29px;
+    color: $colorB;
+    text-align: center;
+    margin-bottom: 18px;
+
+    &_wide {
+      font-weight: 500;
+    }
+  }
+
+  &__button {
+    font-family: Montserrat;
+    font-size: 16px;
+    line-height: 20px;
+    color: $colorB;
+    border: 1px solid $colorB;
+    border-radius: 20px;
+    width: 290px;
+    height: 44px;
+    background-color: transparent;
+    transition: all 0.3s;
+    &:hover {
+      color: $colorA;
+      background-color: $colorB;
+      cursor: pointer;
+    }
+  }
+}
